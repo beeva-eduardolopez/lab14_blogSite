@@ -1,1 +1,18 @@
-<h1></h1>
+<div class="center">
+    <form class="fill" name="newBlogData" action="#" ng-controller="NewPostController">
+        Title:
+        <br/>
+        <input class="input-normal" type="text" name="form.title">
+        <br/>
+        <br/> Author:
+        <br/>
+        <input class="input-normal" type="text" ng-model="form.autor">
+        <br/>
+        <br/> Content:
+        <br/>
+        <textarea rows="10" cols="75" placeholder="Content Post..."></textarea>
+        <br/>
+        <br/>
+        <input class="btn btn-primary" type="submit" ngClick="Submit">
+    </form>
+</div>

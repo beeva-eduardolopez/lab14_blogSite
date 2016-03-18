@@ -1,0 +1,27 @@
+.center{
+     justify-content: center; 
+     text-align: center;
+     width: auto;  
+}
+
+.fill {
+  -moz-border-radius: 20px; 
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+   background-color: #D8D8D8;
+  text-align: center;
+  margin: 0 auto;
+  width: 65%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+
+}
+
+.input-normal {
+  width: 70%;
+  height: 70%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
