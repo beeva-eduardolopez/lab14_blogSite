@@ -4,7 +4,7 @@
 // app.factory('', ['', []]);
 
 
-var factories = angular.module('myBlogApp.factories', []);
+// var factories = angular.module('myBlogApp.factories', []);
 // factories.factory('WordFactory', ['$http', function($http) {
 //     var f = {};
 //     f.age = 23;

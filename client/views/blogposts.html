@@ -1,7 +1,23 @@
+<header>
+    <div id="block">
+        <div style="padding: 10px;">
+            <h2>Blog Site DepotUI</h2>
+            <span>by     <span>Eduardo Lopez Anta</span></span>
+            <nav>
+                <a href="#newpost">New Post</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
 <div id="posts" ng-repeat="post in posts">
-    <div class="text-box col-lg-2">
-        <div class="user-name">{{post.user}}</div>
-        <div class="time-stamp">{{post.createdAt}}</div>
-        <p>{{post.text}}</p>
+    <div id="block">
+        <div style="padding: 10px;">
+            <div><span class="list-post">Id: </span>  {{post.id}}</div>
+            <div><span class="list-post">Title: </span>  {{post.title}}</div>
+            <div><span class="list-post">Author: </span>  {{post.author}}</div>
+            <div><span class="list-post">Content: </span>  {{post.content}}</div>
+            <div><span class="list-post">Date: </span>  {{post.createdAt}}</div>
+        </div>
     </div>
 </div>
