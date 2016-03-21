@@ -11,9 +11,13 @@ app.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'views/newpost.html',
             controller: 'NewPostController'
         })
-        .when('/newpost/:id', {
+        .when('/post/:id', {
             templateUrl: 'views/post_detail.html',
             controller: 'PostDetailController'
+        })
+        .when('/updatepost/:id', {
+            templateUrl: 'views/update_post.html',
+            controller: 'PostUpdateController'
         })
         .otherwise({
             redirectTo: '/blogposts'

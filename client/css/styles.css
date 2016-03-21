@@ -71,3 +71,14 @@ span {
     color:#D95B43;  
     
 }
+
+a {
+    padding: 0 10px;
+    text-decoration: none;
+    color:#ECD078;
+    
+}
+
+a:hover {
+    background: #ECD078;
+}

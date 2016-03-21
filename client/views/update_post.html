@@ -1,0 +1,29 @@
+<header>
+    <div id="block">
+        <div style="padding: 10px;">
+            <h2>Update Post</h2>
+            <nav>
+                <a href="#blogpost">List Post</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="center">
+    <form class="fill" name="newBlogData">
+        Title:
+        <br/>
+        <input class="input-normal" id="title" type="text" ng-model="post.title">
+        <br/>
+        <br/> Author:
+        <br/>
+        <input class="input-normal" id="author" type="text" ng-model="post.author">
+        <br/>
+        <br/> Content:
+        <br/>
+        <textarea rows="10" cols="75" id="content" ng-model="post.content" placeholder="Content Post..."></textarea>
+        <br/>
+        <br/>
+        <input class="btn btn-primary" type="submit" value="Update Post" ng-click="postUpdate();">
+    </form>
+</div>
