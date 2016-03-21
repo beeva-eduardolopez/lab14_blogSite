@@ -10,7 +10,7 @@ controllers.controller('PostPageController', ['$scope', '$rootScope', '$http', f
     }, function(err) {
         console.log(err);
     });
-    
+
 }]);
 
 controllers.controller('NewPostController', ['$scope', '$rootScope', '$http', function($scope, $rootScope, $http) {
@@ -34,3 +34,18 @@ controllers.controller('NewPostController', ['$scope', '$rootScope', '$http', fu
     };
 
 }]);
+
+controllers.controller('PostDetailController', ['$scope', '$rootScope', '$http', '$routeParams', function($scope, $rootScope, $http, $routeParams) {
+
+    var postid = $routeParams.id;
+    $http({
+        url: '/api/posts/'+postid,
+        method: 'GET'
+    }).then(function(result) {
+        $scope.post = result.data;
+    }, function(err) {
+        console.log(err);
+    });
+
+}]);
+
