@@ -2,13 +2,14 @@
     <div id="block">
         <div style="padding: 10px;">
             <h2>Blog Site DepotUI</h2>
-            <span>by     <span>Eduardo Lopez Anta</span></span>
+            by     <span>Eduardo Lopez Anta</span></span>
             <nav>
                 <a href="#newpost">New Post</a>
             </nav>
         </div>
     </div>
 </header>
+
 <div class="center">
     <div id="posts" ng-repeat="post in posts  | orderBy:'-createdAt'"">
         <div id="block">
